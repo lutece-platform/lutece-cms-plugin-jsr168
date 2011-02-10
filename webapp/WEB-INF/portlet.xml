@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app 
+	xmlns="/org/apache/pluto/portalImpl/xml/portlet-app_1_0.xsd" 
+	version="1.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="/org/apache/pluto/portalImpl/xml/portlet-app_1_0.xsd /org/apache/pluto/portalImpl/xml/portlet-app_1_0.xsd">
+
+<!-- ////////////////////////////////////////////////////////// -->
+<!-- //                                                         -->
+<!-- //   Insert portlet's definitions here                     -->
+<!-- //                                                         -->
+<!-- ////////////////////////////////////////////////////////// -->
+
+
+
+<!-- ////////////////////////////////////////////////////////// -->
+<!-- //                                                         -->
+<!-- //   Insert portlet's user-attributes here                 -->
+<!-- //                                                         -->
+<!-- ////////////////////////////////////////////////////////// -->
+
+</portlet-app>

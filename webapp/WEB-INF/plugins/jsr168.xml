@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plug-in>
+
+   <!-- Plugin Informations -->
+   <name>jsr168</name>
+   <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
+   <version>2.0.5</version>
+   <documentation></documentation>
+   <installation></installation>
+   <changes></changes>
+   <user-guide></user-guide>
+   <description>jsr168.plugin.description</description>
+   <provider>jsr168.plugin.provider</provider>
+   <provider-url>http://lutece.paris.fr</provider-url>
+   <icon-url>images/admin/skin/plugins/jsr168/jsr168.png</icon-url>
+   <copyright>Copyright 2001-2008 Mairie de Paris</copyright>
+   <db-pool-required>0</db-pool-required>
+
+   <!-- Portlet parameters -->
+   <portlets>
+     <portlet>
+       <portlet-class>fr.paris.lutece.plugins.jsr168.business.portlet.Jsr168PortletHome</portlet-class>
+       <portlet-type-id>JSR168_PORTLET</portlet-type-id>
+	   <portlet-type-name>jsr168.portlet.name</portlet-type-name>
+	   <portlet-creation-url>plugins/jsr168/CreatePortletJsr168.jsp</portlet-creation-url>
+	   <portlet-update-url>plugins/jsr168/ModifyPortletJsr168.jsp</portlet-update-url>
+	   <portlet-create-action-url>plugins/jsr168/DoCreatePortletJsr168.jsp</portlet-create-action-url>
+	   <portlet-modify-action-url>plugins/jsr168/DoModifyPortletJsr168.jsp</portlet-modify-action-url>
+	   <!-- optional entries -->
+	   <portlet-create-script-template>/admin/portlet/script_create_portlet.html</portlet-create-script-template>
+	   <portlet-modify-script-template>/admin/portlet/script_modify_portlet.html</portlet-modify-script-template>
+	   <portlet-create-specific-template>/admin/plugins/jsr168/portlet/edit_portlet_jsr168.html</portlet-create-specific-template>
+	   <portlet-modify-specific-template>/admin/plugins/jsr168/portlet/edit_portlet_jsr168.html</portlet-modify-specific-template>
+	   <portlet-create-specific-form-template></portlet-create-specific-form-template>
+	   <portlet-modify-specific-form-template></portlet-modify-specific-form-template>
+     </portlet>
+   </portlets>
+
+ </plug-in>
+
+
+

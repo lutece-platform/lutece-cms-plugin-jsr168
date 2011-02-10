@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-entity-registry>
+	<application id="lutece">
+		<definition-id>lutece</definition-id>
+
+		<!-- Introduire ici les definitions de portlets -->
+		<portlet id="mailViewer">
+			<definition-id>lutece.mailViewer</definition-id>
+		</portlet>
+		<portlet id="calendar">
+			<definition-id>lutece.calendar</definition-id>
+		</portlet>
+		<portlet id="addConfigMode">
+			<definition-id>lutece.addConfigMode</definition-id>
+		</portlet>
+		
+		<portlet id="CalcPortlet">
+			<definition-id>lutece.CalcPortlet</definition-id>
+		</portlet>
+		
+		<portlet id="BookmarkPortlet">
+			<definition-id>lutece.BookmarkPortlet</definition-id>
+		</portlet>
+
+	</application>
+</portlet-entity-registry>

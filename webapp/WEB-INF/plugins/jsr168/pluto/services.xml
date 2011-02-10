@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<services>
+
+<service serviceBase="org.apache.pluto.portalImpl.services.config.ConfigService" 
+	 implementation="org.apache.pluto.portalImpl.services.config.ConfigServiceImpl">
+	<properties>
+		<property name="host.name"       value="localhost"/>
+		<property name="host.port.http"  value="8080"/>
+		<property name="host.port.https" value=""/>
+
+		<property name="supported.portletmode" value="view"  />
+		<property name="supported.portletmode" value="edit"  />
+		<property name="supported.portletmode" value="help"  />
+		<property name="supported.portletmode" value="config"/>
+
+		<property name="supported.windowstate" value="normal"   />
+		<property name="supported.windowstate" value="maximized"/>
+		<property name="supported.windowstate" value="minimized"/>
+
+		<property name="portletcontainer.uniquename" value="lutece2Pluto"/>
+		<property name="portletcontainer.entrance.impl" value="fr.paris.lutece.plugins.jsr168.pluto.PortletContainerImpl"/>
+		<property name="portletcontainer.entrance.wrapper.impl" value="org.apache.pluto.portalImpl.core.PortletContainerWrapperImpl"/>
+	</properties>
+</service>
+
+<service serviceBase="org.apache.pluto.portalImpl.services.log.LogService" 
+	 implementation="fr.paris.lutece.plugins.jsr168.pluto.services.log.LogServiceImpl">
+	<properties>
+		<property name="debug.enable" value="true"/>
+		<property name="info.enable"  value="true"/>
+		<property name="warn.enable"  value="true"/>
+		<property name="error.enable" value="true"/>
+	</properties>
+</service>
+
+<service serviceBase="org.apache.pluto.portalImpl.services.factorymanager.FactoryManagerService" 
+	 implementation="fr.paris.lutece.plugins.jsr168.pluto.services.factorymanager.FactoryManagerServiceImpl">
+	<properties>
+		<property name="javax.portlet.ActionRequest"       value="org.apache.pluto.factory.impl.ActionRequestFactoryImpl"/>
+		<property name="javax.portlet.ActionResponse"      value="org.apache.pluto.factory.impl.ActionResponseFactoryImpl" />
+		<property name="javax.portlet.RenderRequest"       value="org.apache.pluto.factory.impl.RenderRequestFactoryImpl"/>
+		<property name="javax.portlet.RenderResponse"      value="org.apache.pluto.factory.impl.RenderResponseFactoryImpl"/>
+
+		<property name="javax.portlet.PortletSession"      value="org.apache.pluto.factory.impl.PortletSessionFactoryImpl"/>
+		<property name="javax.portlet.PortletConfig"       value="org.apache.pluto.factory.impl.PortletConfigFactoryImpl" />
+		<property name="javax.portlet.PortletContext"      value="org.apache.pluto.factory.impl.PortletContextFactoryImpl" />
+		<property name="javax.portlet.PortletPreferences"  value="org.apache.pluto.factory.impl.PortletPreferencesFactoryImpl" />
+		<property name="javax.portlet.PortalContext"       value="org.apache.pluto.factory.impl.PortalContextFactoryImpl" />
+		<property name="javax.portlet.PortletURL"          value="org.apache.pluto.factory.impl.PortletURLFactoryImpl" />
+		<property name="org.apache.pluto.invoker.PortletInvoker" value="org.apache.pluto.invoker.impl.PortletInvokerFactoryImpl" />
+		<property name="org.apache.pluto.util.NamespaceMapper"   value="org.apache.pluto.util.impl.NamespaceMapperFactoryImpl" />
+		<property name="org.apache.pluto.portalImpl.factory.InformationProviderFactory" value="fr.paris.lutece.plugins.jsr168.pluto.core.InformationProviderServiceFactoryImpl" />
+		<property name="org.apache.pluto.factory.ObjectIDFactory" value="org.apache.pluto.portalImpl.core.ObjectIDFactoryImpl" />
+		<property name="org.apache.pluto.om.ControllerFactory"    value="org.apache.pluto.portalImpl.om.ControllerFactoryImpl" />
+		<property name="javax.servlet.http.HttpServletRequest"    value="fr.paris.lutece.plugins.jsr168.pluto.servlet.ServletRequestFactoryImpl" />
+		<property name="javax.servlet.http.HttpServletResponse"   value="org.apache.pluto.portalImpl.servlet.ServletResponseFactoryImpl" />
+	</properties>
+</service>
+
+<service serviceBase="org.apache.pluto.portalImpl.services.portletdefinitionregistry.PortletDefinitionRegistryService" 
+	 implementation="fr.paris.lutece.plugins.jsr168.pluto.services.portletdefinitionregistry.PortletDefinitionRegistryServiceFileImpl">
+	<properties>
+		<property name="web.mapping"       value="WEB-INF/plugins/jsr168/pluto/mapping/servletdefinitionmapping.xml"/>
+		<property name="web.ressource"     value="WEB-INF/web.xml"     />
+		<property name="portlet.mapping"   value="WEB-INF/plugins/jsr168/pluto/mapping/portletdefinitionmapping.xml"/>
+		<property name="portlet.ressource" value="WEB-INF/portlet.xml" />
+	</properties>
+</service>
+
+<service serviceBase="org.apache.pluto.portalImpl.services.portletentityregistry.PortletEntityRegistryService" 
+	 implementation="fr.paris.lutece.plugins.jsr168.pluto.services.portletentityregistry.PortletEntityRegistryServiceFileImpl">
+	<properties>
+		<property name="mapping"   value="WEB-INF/plugins/jsr168/pluto/mapping/portletentitymapping.xml"/>
+		<property name="ressource" value="WEB-INF/plugins/jsr168/pluto/portletentityregistry.xml"       />
+	</properties>
+</service>
+
+</services>
