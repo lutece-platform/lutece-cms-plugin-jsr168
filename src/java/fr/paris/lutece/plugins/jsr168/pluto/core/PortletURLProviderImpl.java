@@ -102,12 +102,12 @@ public class PortletURLProviderImpl implements PortletURLProvider
     private final PortletWindowImpl _portletWindow;
 
     /**
-     * Mode qui doit apparaître dans l'URL de la portlet.
+     * Mode qui doit apparaÃ®tre dans l'URL de la portlet.
      */
     private PortletMode _mode;
 
     /**
-     * Etat qui doit apparaître dans l'URL de la portlet.
+     * Etat qui doit apparaÃ®tre dans l'URL de la portlet.
      */
     private WindowState _state;
 
@@ -118,7 +118,7 @@ public class PortletURLProviderImpl implements PortletURLProvider
     private boolean _bAction;
 
     /**
-     * Indique que l'URL doit être de type sécurisé (HTTPS par exemple).
+     * Indique que l'URL doit Ãªtre de type sÃ©curisÃ© (HTTPS par exemple).
      */
     private boolean _secure;
     private boolean _clearParameters;
@@ -201,8 +201,8 @@ public class PortletURLProviderImpl implements PortletURLProvider
         urlBuf.append( LutecePlutoConstant.URL_JSR168_ACTION );
 
         // Vestige du portail de Pluto: les parametres sont
-        // conservés dans la session (et plus dans le PathInfo),
-        // l'url est entiérement reconstruite.
+        // conservÃ©s dans la session (et plus dans le PathInfo),
+        // l'url est entiÃ¨rement reconstruite.
         /*
         if ( _clearParameters )
         {
@@ -306,7 +306,7 @@ public class PortletURLProviderImpl implements PortletURLProvider
 
         // /////////////////////////////////////////////////////
         // 
-        //    Parametre propre à Lutece
+        //    Parametre propre Ã  Lutece
         // 
         // /////////////////////////////////////////////////////
         String pageIdParam = request.getParameter( Parameters.PAGE_ID );

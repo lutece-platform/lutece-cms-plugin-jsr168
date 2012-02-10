@@ -79,7 +79,7 @@ class ServicesXMLHandler extends DefaultHandler
         }
         else if ( !"services".equals( qName ) && !"properties".equals( qName ) && !"property".equals( qName ) )
         {
-            throw new SAXException( "End Element '" + qName + "' non géré!" );
+            throw new SAXException( "End Element '" + qName + "' non gÃ©rÃ©!" );
         }
     }
 

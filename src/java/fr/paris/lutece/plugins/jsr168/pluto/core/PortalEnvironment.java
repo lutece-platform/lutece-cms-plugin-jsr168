@@ -98,12 +98,12 @@ import javax.servlet.http.HttpServletResponse;
  * Stock la reference de l'ensemble des ressources necessaires aux
  * conteneur de portlets.
  *
- * Un objet de type PortalEnvironment doit être initialisé et placé en
- * attribut dans la requête HTTP avant tout appel au conteneur de portlet.
- * Pour placer l'objet en requête appeler la méthode {@link #initPortalEnvironment()}.
+ * Un objet de type PortalEnvironment doit Ãªtre initialisÃ© et placÃ© en
+ * attribut dans la requÃªte HTTP avant tout appel au conteneur de portlet.
+ * Pour placer l'objet en requÃªte appeler la mÃ©thode {@link #initPortalEnvironment()}.
  *
- * La méthode statique {@link #getPortalEnvironment(HttpServletRequest)} permet
- * d'obtenir la reference de l'environnement à partir de la requête HTTP.
+ * La mÃ©thode statique {@link #getPortalEnvironment(HttpServletRequest)} permet
+ * d'obtenir la reference de l'environnement Ã  partir de la requï¿½te HTTP.
  */
 public class PortalEnvironment
 {
