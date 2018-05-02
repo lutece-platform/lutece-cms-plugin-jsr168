@@ -1,76 +1,69 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<parent>
-	  <artifactId>lutece-plugins-pom</artifactId>
-	  <groupId>fr.paris.lutece.plugins</groupId>
-	  <version>3.7</version>
-	</parent>
-  
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>fr.paris.lutece.plugins</groupId>
-	<artifactId>plugin-jsr168</artifactId>
-	<packaging>lutece-plugin</packaging>
-	<version>2.0.5-SNAPSHOT</version>
-	<name>Lutece jsr168 plugin</name>
-	
-	<repositories>
-		<repository>
-			<id>lutece</id>
-			<name>luteceRepository</name>
-			<url>http://dev.lutece.paris.fr/maven_repository</url>
-			<layout>default</layout>
-		</repository>
-	</repositories>
-	
-	<dependencies>
-	
-		<dependency>
-			<groupId>fr.paris.lutece</groupId>
-			<artifactId>lutece-core</artifactId>
-			<version>[2.2.4,)</version>
-			<type>lutece-core</type>
-		</dependency>
-			
-		<dependency>
-   			<groupId>org.apache.pluto</groupId>
-   			<artifactId>pluto</artifactId>
-   			<version>1.0.1</version>
-		</dependency>
-		<dependency>
-   			<groupId>org.apache.pluto</groupId>
-   			<artifactId>pluto-portal</artifactId>
-   			<version>1.0.1</version>
-		</dependency>
-		<dependency>
-   			<groupId>org.apache.pluto</groupId>
-   			<artifactId>pluto-deploy</artifactId>
-   			<version>1.0.1</version>
-		</dependency>
-		<dependency>
-   			<groupId>org.apache.pluto</groupId>
-   			<artifactId>pluto-descriptors</artifactId>
-   			<version>1.0.1</version>
-		</dependency>
-		<dependency>
-   			<groupId>castor</groupId>
-   			<artifactId>castor</artifactId>
-   			<version>0.9.5.3</version>
-		</dependency>
-		<dependency>
-			<groupId>portlet-api</groupId>
-			<artifactId>portlet-api</artifactId>
-			<version>1.0</version>	
-		</dependency>
-		
-	</dependencies>
-	
-	<properties>
-		<componentName>jsr168</componentName>
-            <jiraProjectName>JSRPORTLET</jiraProjectName>
-		<jiraComponentId>10204</jiraComponentId>
-	</properties>
+    <parent>
+        <artifactId>lutece-global-pom</artifactId>
+        <groupId>fr.paris.lutece.tools</groupId>
+        <version>3.0.12</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.paris.lutece.plugins</groupId>
+    <artifactId>plugin-jsr168</artifactId>
+    <packaging>lutece-plugin</packaging>
+    <version>2.0.5-SNAPSHOT</version>
+    <name>Lutece jsr168 plugin</name>
+    <repositories>
+        <repository>
+            <id>lutece</id>
+            <name>luteceRepository</name>
+            <url>http://dev.lutece.paris.fr/maven_repository</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>fr.paris.lutece</groupId>
+            <artifactId>lutece-core</artifactId>
+            <version>[2.2.4,)</version>
+            <type>lutece-core</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pluto</groupId>
+            <artifactId>pluto</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pluto</groupId>
+            <artifactId>pluto-portal</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pluto</groupId>
+            <artifactId>pluto-deploy</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pluto</groupId>
+            <artifactId>pluto-descriptors</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>castor</groupId>
+            <artifactId>castor</artifactId>
+            <version>0.9.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>portlet-api</groupId>
+            <artifactId>portlet-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <componentName>jsr168</componentName>
+        <jiraProjectName>JSRPORTLET</jiraProjectName>
+        <jiraComponentId>10204</jiraComponentId>
+    </properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/plugin-jsr168</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/plugin-jsr168</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/cms/plugin-jsr168</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-cms-plugin-jsr168.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-cms-plugin-jsr168.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-cms-plugin-jsr168.git</url>
     </scm>
 </project>
